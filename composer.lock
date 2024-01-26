@@ -1,0 +1,73 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "89563124fc6ab1c386dc06df98280807",
+    "packages": [
+        {
+            "name": "ismail0234/trendyol-php-api",
+            "version": "v1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ismail0234/trendyol-php-api.git",
+                "reference": "c20c3278cf21396b61f28cd7081b17dd9f70fcb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ismail0234/trendyol-php-api/zipball/c20c3278cf21396b61f28cd7081b17dd9f70fcb8",
+                "reference": "c20c3278cf21396b61f28cd7081b17dd9f70fcb8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "IS\\PazarYeri\\Trendyol\\": "IS/PazarYeri/Trendyol"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "İsmail Satilmiş",
+                    "email": "ismaiil_0234@hotmail.com"
+                }
+            ],
+            "description": "Trendyol PHP API",
+            "keywords": [
+                "PHP API",
+                "eticaret",
+                "pazaryeri",
+                "trendyol",
+                "trendyol php api"
+            ],
+            "support": {
+                "issues": "https://github.com/ismail0234/trendyol-php-api/issues",
+                "source": "https://github.com/ismail0234/trendyol-php-api/tree/v1.1.3"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/botbenson",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-08-24T07:24:45+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

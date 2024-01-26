@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ismail0234/trendyol-php-api": "^1.1"
+    }
+}
