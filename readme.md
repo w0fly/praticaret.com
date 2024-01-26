@@ -46,7 +46,6 @@
 
 Opencart Tabanlı E-Ticaret sistemleri için, kullanılacak olan bir pazar-yeri entegrasyon servisidir. 
 
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
