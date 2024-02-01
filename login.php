@@ -32,49 +32,69 @@ if (isset($_SESSION['giris'])) {
     <div class="card-header text-center">
       <a href="#" class="h1"><b>Pra</b>Ticaret</a>
     </div>
-    <div class="card-body">
-      <p class="login-box-msg">Sistem Yönetim İçin Lütfen Kullanıcı Bilgilerinizi Girin</p>
+   <!-- İlgili içeriği güncelleyin -->
+<div class="card-body">
+    <!-- İhtiyacınıza göre hata mesajını buraya ekleyebilirsiniz -->
+   
 
-      <form id="loginForm" method="post">
+    <p class="login-box-msg">Sistem Yönetim İçin Lütfen Kullanıcı Bilgilerinizi Girin</p>
+
+    <form id="loginForm" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="E-Posta Adresi" name="email">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+            <input type="email" class="form-control" placeholder="E-Posta Adresi" name="email">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                </div>
             </div>
-          </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Şifre" name="password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
+            <input type="password" class="form-control" placeholder="Şifre" name="password">
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                </div>
             </div>
-          </div>
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Oturumu Açık Tut
-              </label>
+            <div class="col-8">
+                <div class="icheck-primary">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">
+                        Oturumu Açık Tut
+                    </label>
+                </div>
             </div>
-          </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
-          </div>
-          <!-- /.col -->
+            <!-- /.col -->
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+            </div>
+            <!-- /.col -->
         </div>
-      </form>
-
-      <p class="mb-1">
+        
+    </form>
+    <p class="mb-1">
         <a href="forgot-password.html">Şifremi Sıfırla</a>
-      </p>
-    </div>
-    <!-- /.card-body -->
-  </div>
+    </p>
+</div>
+<div class="modal fade" id="modal-danger" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-danger">
+            <div class="modal-header">
+              <h4 class="modal-title">Doğrulama Hatası !</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Kullanıcı bilgileriniz veri tabanında bulunamadı. Lütfen kullanıcı bilgilerinizi kontrol edip tekrar deneyin !</p>
+            </div>
+            
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
   <!-- /.card -->
 </div>
 <!-- /.login-box -->
@@ -85,7 +105,6 @@ if (isset($_SESSION['giris'])) {
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
-
 <script>
 $(document).ready(function() {
     $('#loginForm').submit(function(e) {
@@ -95,15 +114,24 @@ $(document).ready(function() {
             url: "core/ajaxLogin.php",
             data: $(this).serialize(),
             success: function(response) {
-                var jsonData = JSON.parse(response);
-                if (jsonData.status == "success") {
-                    window.location.href = "home.php";
-                } else {
-                    alert(jsonData.message);
+                try {
+                    var jsonData = JSON.parse(response);
+                    if (jsonData.status === "success") {
+                        window.location.href = "home.php";
+                    } else {
+                        $('#errorModalBody').html(jsonData.message);
+                        $('#modal-danger').modal('show');
+                    }
+                } catch (error) {
+                    console.error('JSON parse hatası:', error);
+                    $('#errorMessage').html('Sunucu hatası. Lütfen tekrar deneyin.');
+                    $('#errorToast').toast('show');
                 }
             },
-            error: function() {
-                alert("Sunucu hatası. Lütfen tekrar deneyin.");
+            error: function(xhr, status, error) {
+                console.error('AJAX hatası:', error);
+                $('#errorMessage').html('Sunucu hatası. Lütfen tekrar deneyin.');
+                $('#errorToast').toast('show');
             }
         });
     });
