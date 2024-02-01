@@ -1,5 +1,6 @@
 <?php
 include "vendor/autoload.php";
+include "core/db.php";
 
 use IS\PazarYeri\Trendyol\TrendyolClient;
 
