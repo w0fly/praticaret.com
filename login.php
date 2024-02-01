@@ -23,7 +23,7 @@
       <a href="#" class="h1"><b>Pra</b>Ticaret</a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">sistem Yönetim İçin Lütfen Kullanıcı Bilgilerinizi Girin</p>
+      <p class="login-box-msg">Sistem Yönetim İçin Lütfen Kullanıcı Bilgilerinizi Girin</p>
 
       <form action="../../index3.html" method="post">
         <div class="input-group mb-3">
