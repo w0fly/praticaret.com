@@ -1,4 +1,20 @@
+<?php
+ob_start();
+session_start();
 
+include "config.php";
+if($_POST)
+{
+
+}
+
+
+if (isset($_SESSION['giris']))
+{
+  header("Location:home.php");
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +41,7 @@
     <div class="card-body">
       <p class="login-box-msg">Sistem Yönetim İçin Lütfen Kullanıcı Bilgilerinizi Girin</p>
 
-      <form action="../../index3.html" method="post">
+      <form action="" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="E-Posta Adresi">
           <div class="input-group-append">
