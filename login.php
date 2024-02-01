@@ -3,16 +3,10 @@ ob_start();
 session_start();
 
 include "config.php";
-if($_POST)
-{
 
-}
-
-
-if (isset($_SESSION['giris']))
-{
-  header("Location:home.php");
-
+if (isset($_SESSION['giris'])) {
+    header("Location:home.php");
+    exit; // Kodun devamını çalıştırmamak için çıkış yap
 }
 ?>
 <!DOCTYPE html>
@@ -41,9 +35,9 @@ if (isset($_SESSION['giris']))
     <div class="card-body">
       <p class="login-box-msg">Sistem Yönetim İçin Lütfen Kullanıcı Bilgilerinizi Girin</p>
 
-      <form action="" method="post">
+      <form id="loginForm" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="E-Posta Adresi">
+          <input type="email" class="form-control" placeholder="E-Posta Adresi" name="username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -51,7 +45,7 @@ if (isset($_SESSION['giris']))
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Şifre">
+          <input type="password" class="form-control" placeholder="Şifre" name="password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -75,12 +69,9 @@ if (isset($_SESSION['giris']))
         </div>
       </form>
 
-    
-
       <p class="mb-1">
         <a href="forgot-password.html">Şifremi Sıfırla</a>
       </p>
-     
     </div>
     <!-- /.card-body -->
   </div>
@@ -94,5 +85,30 @@ if (isset($_SESSION['giris']))
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#loginForm').submit(function(e) {
+        e.preventDefault(); // Formun normal submit olmasını engelle
+        $.ajax({
+            type: "POST",
+            url: "core/ajaxLogin.php",
+            data: $(this).serialize(),
+            success: function(response) {
+                var jsonData = JSON.parse(response);
+                if (jsonData.status == "success") {
+                    window.location.href = "home.php";
+                } else {
+                    alert(jsonData.message);
+                }
+            },
+            error: function() {
+                alert("Sunucu hatası. Lütfen tekrar deneyin.");
+            }
+        });
+    });
+});
+</script>
+
 </body>
 </html>
