@@ -24,3 +24,17 @@
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+  <center>
+    <i style="font-size:25px" class="nav-icon fas fa-cog"></i>
+</center>
+      <span style="font-size:25px" class="brand-text font-weight-light"> PraTicaret - Entegratör</span>
+
+
+    </a>
+    </center>
+    </div>
