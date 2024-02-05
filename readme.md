@@ -58,7 +58,7 @@ Opencart Tabanlı E-Ticaret sistemleri için, kullanılacak olan bir pazar-yeri 
 
 - [x] İskelet Vendor yapısı
 - [ ] Referans TLS Tanımları
-- [ ] OpenCart API Düzeni
+- [x] OpenCart API Düzeni
 - [ ] OpenCart Tool Entegrasyonu
 - [ ] Ticari Program Çıkış End-Pointleri
 
