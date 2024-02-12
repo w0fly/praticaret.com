@@ -34,15 +34,48 @@ if (!isset($_SESSION['giris']) || $_SESSION['giris'] !== true) {
 
     <!-- Main content -->
     <section class="content">
-
-          <!-- ./col -->
-        <!-- /.row -->
-        <!-- Main row -->
+      <div class="container-fluid">
         <div class="row">
-         
+          <div class="col-12">
+           
+
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Kullanıcı Yönetimi</h3>              
+              </div>
+             <a href="#"><button type="button" class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Yeni Kullanıcı Ekle</button></a>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Kullanıcı Adı</th>
+                    <th>E-Posta</th>
+                    <th>Şifre Kurtarma Anahtarı</th>
+                    <th>İşlem</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Sistem Yöneticisi</td>
+                    <td>root@praticaret.com </td>
+                    <td>praticaret123</td>
+                    <td>root123</td>
+                    <td><button type="button" class="btn btn-block btn-danger">Sil</button> <button type="button" class="btn btn-block btn-success">Düzenle</button></td>     
+                  </tr>
+                  </tbody>
+                 
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
         </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
