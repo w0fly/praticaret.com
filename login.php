@@ -35,7 +35,9 @@ if (isset($_SESSION['giris'])) {
    <!-- İlgili içeriği güncelleyin -->
 <div class="card-body">
     <!-- İhtiyacınıza göre hata mesajını buraya ekleyebilirsiniz -->
-   
+   <script>
+    alert('Sunucuda SQL bazlı eklemeler yapılıyor. Kodlarda ilerlemeler gözükmeyebilir veya anlık olarak hatalar yansıyabilir.')
+   </script>
 
     <p class="login-box-msg">Sistem Yönetim İçin Lütfen Kullanıcı Bilgilerinizi Girin</p>
 
