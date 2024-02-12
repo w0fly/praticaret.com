@@ -39,7 +39,9 @@ if (!isset($_SESSION['giris']) || $_SESSION['giris'] !== true) {
         <!-- /.row -->
         <!-- Main row -->
         <div class="row">
-         
+        <iframe src="http://localhost/praticaret.com/srv_mon/index.php?&mod=server_status" 
+            width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
