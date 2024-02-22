@@ -57,6 +57,7 @@ return array(
     'Illuminate\\Support\\' => array($vendorDir . '/laravel/framework/src/Illuminate/Macroable', $vendorDir . '/laravel/framework/src/Illuminate/Collections', $vendorDir . '/laravel/framework/src/Illuminate/Conditionable'),
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'IS\\PazarYeri\\Trendyol\\' => array($vendorDir . '/ismail0234/trendyol-php-api/IS/PazarYeri/Trendyol'),
+    'IS\\PazarYeri\\N11\\' => array($vendorDir . '/ismail0234/n11-php-api/IS/PazarYeri/N11'),
     'GuzzleHttp\\UriTemplate\\' => array($vendorDir . '/guzzlehttp/uri-template/src'),
     'GrahamCampbell\\ResultType\\' => array($vendorDir . '/graham-campbell/result-type/src'),
     'Fruitcake\\Cors\\' => array($vendorDir . '/fruitcake/php-cors/src'),

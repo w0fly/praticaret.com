@@ -745,6 +745,59 @@
             "install-path": "../guzzlehttp/uri-template"
         },
         {
+            "name": "ismail0234/n11-php-api",
+            "version": "v1.1.4",
+            "version_normalized": "1.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ismail0234/n11-php-api.git",
+                "reference": "531dc127a46b24acaa89146144864b670c7e1fbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ismail0234/n11-php-api/zipball/531dc127a46b24acaa89146144864b670c7e1fbf",
+                "reference": "531dc127a46b24acaa89146144864b670c7e1fbf",
+                "shasum": ""
+            },
+            "time": "2021-02-08T06:36:49+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "IS\\PazarYeri\\N11\\": "IS/PazarYeri/N11"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "İsmail Satilmiş",
+                    "email": "ismaiil_0234@hotmail.com"
+                }
+            ],
+            "description": "N11 PHP API",
+            "keywords": [
+                "N11",
+                "PHP API",
+                "eticaret",
+                "n11 php api",
+                "pazaryeri"
+            ],
+            "support": {
+                "issues": "https://github.com/ismail0234/n11-php-api/issues",
+                "source": "https://github.com/ismail0234/n11-php-api/tree/v1.1.4"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/botbenson",
+                    "type": "patreon"
+                }
+            ],
+            "install-path": "../ismail0234/n11-php-api"
+        },
+        {
             "name": "ismail0234/trendyol-php-api",
             "version": "v1.1.3",
             "version_normalized": "1.1.3.0",

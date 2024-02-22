@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '3dc60997dc9f58b41ee0dfda62ec63d2a619c9f5',
+        'reference' => '2f78a5690718b1b92292b5e6cb2e844d02dcdcff',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '3dc60997dc9f58b41ee0dfda62ec63d2a619c9f5',
+            'reference' => '2f78a5690718b1b92292b5e6cb2e844d02dcdcff',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -307,6 +307,15 @@
                 0 => 'v10.22.0',
             ),
         ),
+        'ismail0234/n11-php-api' => array(
+            'pretty_version' => 'v1.1.4',
+            'version' => '1.1.4.0',
+            'reference' => '531dc127a46b24acaa89146144864b670c7e1fbf',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ismail0234/n11-php-api',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'ismail0234/trendyol-php-api' => array(
             'pretty_version' => 'v1.1.3',
             'version' => '1.1.3.0',
@@ -505,8 +514,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '3.0.0',
+                0 => '3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(

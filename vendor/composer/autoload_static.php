@@ -107,6 +107,7 @@ class ComposerStaticInit47f477d178215b2ecd8369174189573c
             'Illuminate\\Support\\' => 19,
             'Illuminate\\' => 11,
             'IS\\PazarYeri\\Trendyol\\' => 22,
+            'IS\\PazarYeri\\N11\\' => 17,
         ),
         'G' => 
         array (
@@ -346,6 +347,10 @@ class ComposerStaticInit47f477d178215b2ecd8369174189573c
         'IS\\PazarYeri\\Trendyol\\' => 
         array (
             0 => __DIR__ . '/..' . '/ismail0234/trendyol-php-api/IS/PazarYeri/Trendyol',
+        ),
+        'IS\\PazarYeri\\N11\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ismail0234/n11-php-api/IS/PazarYeri/N11',
         ),
         'GuzzleHttp\\UriTemplate\\' => 
         array (
