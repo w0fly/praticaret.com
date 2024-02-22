@@ -1,5 +1,5 @@
 <?php
-include "../config.php";
+include "../../config.php";
 /**
  *
  * @description Webhook istek hızı
@@ -25,30 +25,30 @@ $trendyol->webhook->setRequestMode('medium');
 $trendyol->webhook->setResultMode('medium');
 
 /* Anonymous function ile siparişleri almak */
-$trendyol->webhook->orderConsume(function($product){
+$trendyol->webhook->orderConsume(function($order){
 	
 	echo "Sipariş Bilgileri";
 	echo "<pre>";
-	print_r($product);
+	print_r($order);
 	echo "</pre>";
 	
 });
 
 /* Class ile siparişleri almak */
 
-Class TrendyolProducts
+Class TrendyolOrders
 {
 	
-	public function consume($product)
+	public function consume($order)
 	{
 
 		echo "Sipariş Bilgileri";
 		echo "<pre>";
-		print_r($product);
+		print_r($order);
 		echo "</pre>";	
 
 	}
 
 }
 
-$trendyol->webhook->orderConsume(array(new TrendyolProducts(), 'consume'));
+$trendyol->webhook->orderConsume(array(new TrendyolOrders(), 'consume'));
