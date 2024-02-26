@@ -2,6 +2,8 @@
     "require": {
         "ismail0234/trendyol-php-api": "^1.1",
         "sven/artisan-view": "^3.6",
-        "ismail0234/n11-php-api": "^1.1"
+        "ismail0234/n11-php-api": "^1.1",
+        "bluntk/pazarama": "^1.0",
+        "epttavm/api-client": "^1.0"
     }
 }

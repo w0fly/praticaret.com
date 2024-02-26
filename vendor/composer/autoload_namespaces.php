@@ -6,4 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Epttavm' => array($vendorDir . '/epttavm/api-client/src'),
 );
