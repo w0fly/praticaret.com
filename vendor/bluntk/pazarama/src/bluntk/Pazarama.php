@@ -1,12 +1,4 @@
 <?php
-/**
- * Author: Kıvanç Ağaoğlu
- * Web: https://kivancagaoglu.com
- * Mail: info@kivancagaoglu.com
- * Skype: kivancagaoglu
- * Github: https://github.com/kivancagaogluu/
- *
- */
 
 
 namespace bluntk;
