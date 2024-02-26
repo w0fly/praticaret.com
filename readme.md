@@ -60,6 +60,6 @@ Opencart Tabanlı E-Ticaret sistemleri için, kullanılacak olan bir pazar-yeri 
 - [X] Referans TLS Tanımları
 - [x] OpenCart API Düzeni
 - [ ] OpenCart Tool Entegrasyonu
-- [ ] Ticari Program Çıkış End-Pointleri
+- [x] Ticari Program Çıkış End-Pointleri
 
 
