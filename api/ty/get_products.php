@@ -24,6 +24,8 @@ $trendyol->webhook->setRequestMode('medium');
  */
 $trendyol->webhook->setResultMode('medium');
 
+#region Samet Kaldıracak
+
 /* Anonymous function ile siparişleri almak */
 $trendyol->webhook->orderConsume(function($product){
 	
@@ -34,6 +36,7 @@ $trendyol->webhook->orderConsume(function($product){
 	
 });
 
+#endregion
 /* Class ile siparişleri almak */
 
 Class TrendyolProducts
