@@ -30,7 +30,7 @@
   <h3 align="center">PraTicaret - Pazar Yeri Entegrasyon Projesi</h3>
 
   <p align="center">
-    Proje Durumu : Beta / Guru Aşaması
+    Proje Durumu : Hata Ayıklama & Haberleşeme Parametre Kodlama Evresi
   </p>
 </div>
 
