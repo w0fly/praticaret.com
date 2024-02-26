@@ -7,6 +7,7 @@ $os = PHP_OS;
 
 if (strpos($os, 'WIN') !== false) 
 {
+    //Eğer Windows ise, Ethernet kartı dinlenerek domain mix vasıtasıyla SHA MD5 şifrelemesi yaptıralım
 
     echo "  WINDOWS - TEST";
 
@@ -15,6 +16,7 @@ if (strpos($os, 'WIN') !== false)
 elseif (strpos($os, 'Linux') !== false) 
 
 {
+    //Eğer Linux ise, JSON veyahut Trafik dinlenerek SHA MD5 şifrelemesi yaptıralım
 
     echo "LINUX - TEST";
 
