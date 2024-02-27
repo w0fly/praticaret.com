@@ -29,29 +29,15 @@ $trendyol->webhook->setResultMode('medium');
 /* Anonymous function ile siparişleri almak */
 $trendyol->webhook->orderConsume(function($order){
 	
-	echo "Sipariş Bilgileri";
-	echo "<pre>";
+
 	print_r($order);
-	echo "</pre>";
 	
 });
 
 #endregion
 /* Class ile siparişleri almak */
 
-Class TrendyolOrders
-{
-	
-	public function consume($order)
-	{
 
-		echo "Sipariş Bilgileri";
-		echo "<pre>";
-		print_r($order);
-		echo "</pre>";	
 
-	}
-
-}
 
 $trendyol->webhook->orderConsume(array(new TrendyolOrders(), 'consume'));
