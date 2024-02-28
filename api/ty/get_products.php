@@ -10,7 +10,7 @@ include "../../config.php";
  * 	  'vfast'  => 30 saniye
  * 	   
  */
-$trendyol->webhook->setRequestMode('medium');
+$trendyol->webhook->setRequestMode('vfast');
 
 /**
  *
@@ -22,7 +22,7 @@ $trendyol->webhook->setRequestMode('medium');
  * 	  'min'      => 50 adet
  * 	   
  */
-$trendyol->webhook->setResultMode('medium');
+$trendyol->webhook->setResultMode('vfast');
 
 #region Samet Kaldıracak
 
@@ -37,4 +37,3 @@ $trendyol->webhook->orderConsume(function($product){
 #endregion
 /* Class ile siparişleri almak */
 
-$trendyol->webhook->orderConsume(array(new TrendyolProducts(), 'consume'));

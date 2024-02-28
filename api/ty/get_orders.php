@@ -39,5 +39,3 @@ $trendyol->webhook->orderConsume(function($order){
 
 
 
-
-$trendyol->webhook->orderConsume(array(new TrendyolOrders(), 'consume'));
