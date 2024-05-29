@@ -30,7 +30,9 @@
 
   <p align="center">
     Proje Durumu : Proje İptali
+    <br>
     Proje İptal Sebebi : Yatırımcı Taraflı Fesh Edilme
+    <br>
     Proje İlerleme Kademesi : %70
   </p>
 </div>
