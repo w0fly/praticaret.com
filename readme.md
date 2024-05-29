@@ -24,13 +24,14 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://www.praticaret.com/image/cache/catalog/yeni/logo-siyah-339x97.png.webp" alt="Logo" width="180" height="80">
   </a>
 
   <h3 align="center">PraTicaret - Pazar Yeri Entegrasyon Projesi</h3>
 
   <p align="center">
-    Proje Durumu : Hata Ayıklama & Haberleşeme Parametre Kodlama Evresi
+    Proje Durumu : Proje İptali
+    Proje İptal Sebebi : Yatırımcı Taraflı Fesh Edilme
+    Proje İlerleme Kademesi : %70
   </p>
 </div>
 
